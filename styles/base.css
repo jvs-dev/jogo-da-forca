@@ -1,0 +1,15 @@
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 835px) {
+}

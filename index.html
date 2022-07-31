@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="main__maxwindow">
+            <section class="maxwindow__end">
+                <h1 class="end__title">Game Over</h1>
+                <h2 class="end__title title--2">Play Again?</h2>
+                <div class="end__continue">
+                    <button class="end__buttom buttom--no">No</button>
+                    <button class="end__buttom buttom--yes">Yes</button>
+                </div>
+            </section>
+        </div>
+        <header class="main__header">
+            <h3 class="header__title">Tentativas restantes: <span id="tentativas"></span></h3>
+            <div class="header__right">
+                <div class="right__icon">
+                    <ion-icon class="right__icon__reload" name="reload-outline"></ion-icon>
+                </div>
+                <div class="right__icon" onclick="menutoggle()">
+                    <ion-icon class="right__icon__menu active" name="menu-outline"></ion-icon>
+                    <ion-icon class="right__icon__closemenu" name="close-outline"></ion-icon>
+                </div>
+            </div>
+        </header>
+        <div class="main__maxwindow maxwindow--menu">
+            <menu class="main__menu">
+                <h1 class="menu__title">Forca</h1>
+                <div>
+                    <li class="menu__li"><button class="menu__button"><ion-icon name="cart-outline"></ion-icon>Shop</button></li>
+                    <li class="menu__li"><button class="menu__button"><ion-icon name="game-controller-outline"></ion-icon>Difficulty</button></li>
+                    <li class="menu__li"><button class="menu__button"><ion-icon name="share-social-outline"></ion-icon>Share</button></li>
+                    <li class="menu__li"><button class="menu__button"><ion-icon class="icon__follow" name="logo-instagram"></ion-icon>Follow</button></li>
+                    <li class="menu__li"><button class="menu__button"><ion-icon name="earth-outline"></ion-icon>More Games</button></li>
+                </div>
+                <p class="menu__p">Todos os direitos - free on github</p>
+            </menu>
+        </div>
+        <section class="main__game">
+            <figure class="game__forca">
+                <img class="forca__img" src="assets/img/Frame 1 (1).png" alt="">
+            </figure>
+            <div class="game__right">
+                <div class="game__right--top">
+                    <h2 class="game__question"></h2>
+                    <button class="game__dica">?
+                        <span class="dica__number">3</span>
+                    </button>
+                </div>
+                <div class="game__answer">
+                </div>
+            </div>
+        </section>
+
+        <article class="teclado">
+            <button class="teclado__tecla" id="ta">A</button>
+            <button class="teclado__tecla" id="tb">B</button>
+            <button class="teclado__tecla" id="tc">C</button>
+            <button class="teclado__tecla" id="td">D</button>
+            <button class="teclado__tecla" id="te">E</button>
+            <button class="teclado__tecla" id="tf">F</button>
+            <button class="teclado__tecla" id="tg">G</button>
+            <button class="teclado__tecla" id="th">H</button>
+            <button class="teclado__tecla" id="ti">I</button>
+            <button class="teclado__tecla" id="tj">J</button>
+            <button class="teclado__tecla" id="tk">K</button>
+            <button class="teclado__tecla" id="tl">L</button>
+            <button class="teclado__tecla" id="tm">M</button>
+            <button class="teclado__tecla" id="tn">N</button>
+            <button class="teclado__tecla" id="to">O</button>
+            <button class="teclado__tecla" id="tp">P</button>
+            <button class="teclado__tecla" id="tq">Q</button>
+            <button class="teclado__tecla" id="tr">R</button>
+            <button class="teclado__tecla" id="ts">S</button>
+            <button class="teclado__tecla" id="tt">T</button>
+            <button class="teclado__tecla" id="tu">U</button>
+            <button class="teclado__tecla" id="tv">V</button>
+            <button class="teclado__tecla" id="tw">W</button>
+            <button class="teclado__tecla" id="tx">X</button>
+            <button class="teclado__tecla" id="ty">Y</button>
+            <button class="teclado__tecla" id="tz">Z</button>
+        </article>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
