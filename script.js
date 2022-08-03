@@ -261,10 +261,16 @@ function scrvanswer2() {
     tb.onclick = function () {
         b1.classList.add("correct")
         tb.classList.add("correct")
+        if (te.classList.contains('correct') && tc.classList.contains('correct') && tr.classList.contains('correct') && tb.classList.contains('correct') && to.classList.contains('correct')) {
+            win()   
+        }
     }
     tc.onclick = function () {
         c1.classList.add("correct")
         tc.classList.add("correct")
+        if (te.classList.contains('correct') && tc.classList.contains('correct') && tr.classList.contains('correct') && tb.classList.contains('correct') && to.classList.contains('correct')) {
+            win()   
+        }
     }
     td.onclick = function () {
         td.classList.add('incorrect')
@@ -301,6 +307,9 @@ function scrvanswer2() {
     to.onclick = function () {
         o1.classList.add("correct")
         to.classList.add("correct")
+        if (te.classList.contains('correct') && tc.classList.contains('correct') && tr.classList.contains('correct') && tb.classList.contains('correct') && to.classList.contains('correct')) {
+            win()   
+        }
     }
     tp.onclick = function () {
         tp.classList.add('incorrect')
@@ -314,6 +323,9 @@ function scrvanswer2() {
         r1.classList.add("correct")
         r2.classList.add("correct")
         tr.classList.add("correct")
+        if (te.classList.contains('correct') && tc.classList.contains('correct') && tr.classList.contains('correct') && tb.classList.contains('correct') && to.classList.contains('correct')) {
+            win()   
+        }
     }
     tu.onclick = function () {
         tu.classList.add('incorrect')
@@ -356,6 +368,9 @@ function scrvanswer2() {
         e1.classList.add("correct")
         e2.classList.add("correct")
         te.classList.add("correct")
+        if (te.classList.contains('correct') && tc.classList.contains('correct') && tr.classList.contains('correct') && tb.classList.contains('correct') && to.classList.contains('correct')) {
+            win()   
+        }
     }
     ti.onclick = function () {
         ti.classList.add('incorrect')
@@ -406,6 +421,9 @@ function scrvanswer3() {
     ta.onclick = function () {
         a1.classList.add("correct")
         ta.classList.add("correct")
+        if (te.classList.contains('correct') && ts.classList.contains('correct') && tg.classList.contains('correct') && tr.classList.contains('correct') && ti.classList.contains('correct') && tm.classList.contains('correct') && ta.classList.contains('correct')) {
+            win()   
+        }
     }
     tb.onclick = function () {
         tb.classList.add('incorrect')
@@ -426,6 +444,9 @@ function scrvanswer3() {
     tg.onclick = function () {
         g1.classList.add("correct")
         tg.classList.add("correct")
+        if (te.classList.contains('correct') && ts.classList.contains('correct') && tg.classList.contains('correct') && tr.classList.contains('correct') && ti.classList.contains('correct') && tm.classList.contains('correct') && ta.classList.contains('correct')) {
+            win()   
+        }
     }
     th.onclick = function () {
         th.classList.add('incorrect')
@@ -446,6 +467,9 @@ function scrvanswer3() {
     tm.onclick = function () {
         m1.classList.add("correct")
         tm.classList.add("correct")
+        if (te.classList.contains('correct') && ts.classList.contains('correct') && tg.classList.contains('correct') && tr.classList.contains('correct') && ti.classList.contains('correct') && tm.classList.contains('correct') && ta.classList.contains('correct')) {
+            win()   
+        }
     }
     to.onclick = function () {
         to.classList.add('incorrect')
@@ -462,6 +486,9 @@ function scrvanswer3() {
     tr.onclick = function () {
         r1.classList.add("correct")
         tr.classList.add("correct")
+        if (te.classList.contains('correct') && ts.classList.contains('correct') && tg.classList.contains('correct') && tr.classList.contains('correct') && ti.classList.contains('correct') && tm.classList.contains('correct') && ta.classList.contains('correct')) {
+            win()   
+        }
     }
     tu.onclick = function () {
         tu.classList.add('incorrect')
@@ -491,6 +518,9 @@ function scrvanswer3() {
     ts.onclick = function () {
         s1.classList.add("correct")
         ts.classList.add("correct")
+        if (te.classList.contains('correct') && ts.classList.contains('correct') && tg.classList.contains('correct') && tr.classList.contains('correct') && ti.classList.contains('correct') && tm.classList.contains('correct') && ta.classList.contains('correct')) {
+            win()   
+        }
     }
     tt.onclick = function () {
         tt.classList.add('incorrect')
@@ -503,10 +533,16 @@ function scrvanswer3() {
     te.onclick = function () {
         e1.classList.add("correct")
         te.classList.add("correct")
+        if (te.classList.contains('correct') && ts.classList.contains('correct') && tg.classList.contains('correct') && tr.classList.contains('correct') && ti.classList.contains('correct') && tm.classList.contains('correct') && ta.classList.contains('correct')) {
+            win()   
+        }
     }
     ti.onclick = function () {
         i1.classList.add("correct")
         ti.classList.add("correct")
+        if (te.classList.contains('correct') && ts.classList.contains('correct') && tg.classList.contains('correct') && tr.classList.contains('correct') && ti.classList.contains('correct') && tm.classList.contains('correct') && ta.classList.contains('correct')) {
+            win()   
+        }
     }
     function redpoints() {
         restantes = restantes - 1
