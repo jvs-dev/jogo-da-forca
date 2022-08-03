@@ -56,6 +56,9 @@ if (level == 2) {
 if (level == 3) {
     scrvanswer3()
 }
+if (level == 4) {
+    scrvanswer4()
+}
 
 function menutoggle() {
     closenmenu.classList.toggle('active')
@@ -543,6 +546,173 @@ function scrvanswer3() {
         if (te.classList.contains('correct') && ts.classList.contains('correct') && tg.classList.contains('correct') && tr.classList.contains('correct') && ti.classList.contains('correct') && tm.classList.contains('correct') && ta.classList.contains('correct')) {
             win()   
         }
+    }
+    function redpoints() {
+        restantes = restantes - 1
+        ntentativas.textContent = restantes
+        if (restantes == 5) {
+            forca.setAttribute('src', 'assets/img/Frame 2 (5).png');
+        }
+        if (restantes == 4) {
+            forca.setAttribute('src', 'assets/img/Frame 2 (4).png');
+        }
+        if (restantes == 3) {
+            forca.setAttribute('src', 'assets/img/Frame 2 (3).png');
+        }
+        if (restantes == 2) {
+            forca.setAttribute('src', 'assets/img/Frame 2 (2).png');
+        }
+        if (restantes == 1) {
+            forca.setAttribute('src', 'assets/img/Frame 2 (1).png');
+        }
+        if (restantes == 0) {
+            forca.setAttribute('src', 'assets/img/Frame 2.png');
+            backloser.classList.add('active')
+            setTimeout(() => {
+                loser.classList.add('active')
+            }, 1);
+        }
+    }
+}
+
+
+function scrvanswer4() {
+    var restantes = 6
+    question.textContent = "Doce"
+    ntentativas.textContent = restantes
+    answer.innerHTML = '<p class="answer__letra" id="r1">R</p><p class="answer__letra" id="a1">A</p><p class="answer__letra" id="p1">P</p><p class="answer__letra" id="a2">A</p><p class="answer__letra" id="d1">D</p><p class="answer__letra" id="u1">U</p><p class="answer__letra" id="r2">R</p><p class="answer__letra" id="a3">A</p>';
+
+    let r1 = document.getElementById('r1')
+    let a1 = document.getElementById("a1")
+    let p1 = document.getElementById("p1")
+    let a2 = document.getElementById("a2")
+    let d1 = document.getElementById("d1")
+    let u1 = document.getElementById("u1")
+    let r2 = document.getElementById("r2")
+    let a3 = document.getElementById("a3")
+
+    ta.onclick = function () {
+        a1.classList.add("correct")
+        a2.classList.add("correct")
+        a3.classList.add("correct")
+        ta.classList.add("correct")
+        if (ta.classList.contains('correct') && tr.classList.contains('correct') && tp.classList.contains('correct') && td.classList.contains('correct') && tu.classList.contains('correct')) {
+            win()   
+        }
+    }
+    tb.onclick = function () {
+        tb.classList.add('incorrect')
+        redpoints()
+    }
+    tc.onclick = function () {
+        tc.classList.add('incorrect')
+        redpoints()
+    }
+    td.onclick = function () {
+        td.classList.add("correct")
+        d1.classList.add("correct")
+        if (ta.classList.contains('correct') && tr.classList.contains('correct') && tp.classList.contains('correct') && td.classList.contains('correct') && tu.classList.contains('correct')) {
+            win()   
+        }
+    }
+    tf.onclick = function () {
+        tf.classList.add('incorrect')
+        redpoints()
+    }
+    tg.onclick = function () {
+        tg.classList.add('incorrect')
+        redpoints()
+    }
+    th.onclick = function () {
+        th.classList.add('incorrect')
+        redpoints()
+    }
+    tj.onclick = function () {
+        tj.classList.add('incorrect')
+        redpoints()
+    }
+    tk.onclick = function () {
+        tk.classList.add('incorrect')
+        redpoints()
+    }
+    tl.onclick = function () {
+        tl.classList.add('incorrect')
+        redpoints()
+    }
+    tm.onclick = function () {
+        tm.classList.add('incorrect')
+        redpoints()
+    }
+    to.onclick = function () {
+        to.classList.add('incorrect')
+        redpoints()
+    }
+    tp.onclick = function () {
+        p1.classList.add("correct")
+        tp.classList.add("correct")
+        if (ta.classList.contains('correct') && tr.classList.contains('correct') && tp.classList.contains('correct') && td.classList.contains('correct') && tu.classList.contains('correct')) {
+            win()   
+        }
+    }
+    tq.onclick = function () {
+        tq.classList.add('incorrect')
+        redpoints()
+    }
+    tr.onclick = function () {
+        tr.classList.add("correct")
+        r1.classList.add("correct")
+        r2.classList.add("correct")
+        if (ta.classList.contains('correct') && tr.classList.contains('correct') && tp.classList.contains('correct') && td.classList.contains('correct') && tu.classList.contains('correct')) {
+            win()   
+        }
+    }
+    tu.onclick = function () {
+        tu.classList.add("correct")
+        u1.classList.add("correct")
+        if (ta.classList.contains('correct') && tr.classList.contains('correct') && tp.classList.contains('correct') && td.classList.contains('correct') && tu.classList.contains('correct')) {
+            win()   
+        }
+    }
+    tv.onclick = function () {
+        tv.classList.add('incorrect')
+        redpoints()
+    }
+    tw.onclick = function () {
+        tw.classList.add('incorrect')
+        redpoints()
+    }
+    tx.onclick = function () {
+        tx.classList.add('incorrect')
+        redpoints()
+    }
+    ty.onclick = function () {
+        ty.classList.add('incorrect')
+        redpoints()
+    }
+    tz.onclick = function () {
+        tz.classList.add('incorrect')
+        redpoints()
+    }
+
+    ts.onclick = function () {
+        ts.classList.add('incorrect')
+        redpoints()
+    }
+    tt.onclick = function () {
+        tt.classList.add('incorrect')
+        redpoints()
+    }
+    tn.onclick = function () {
+        tn.classList.add('incorrect')
+        redpoints()
+    }
+    te.onclick = function () {
+        te.classList.add('incorrect')
+        redpoints()
+    }
+    ti.onclick = function () {
+        ti.classList.add('incorrect')
+        redpoints()
     }
     function redpoints() {
         restantes = restantes - 1

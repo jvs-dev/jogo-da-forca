@@ -157,7 +157,8 @@
     margin: 10px;
     height: 40px;
     width: 40px;
-    background-color: #D9D9D9;
+    background-color: black;
+    color: white;
     box-shadow: -2px 2px 4px rgb(0 0 0 / 46%);
     border-radius: 5px;
     transition: 0.5s;
