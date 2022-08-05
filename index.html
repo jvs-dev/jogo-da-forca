@@ -22,7 +22,7 @@
             <section class="maxwindow__win">
                 <h1 class="win__title">Congratulations</h1>
                 <h2 class="win__title title--2">You win</h2>
-                <button class="win__button">continue</button>
+                <button class="win__button" onclick="restart()">continue</button>
             </section>
         </div>
         <div class="main__maxwindow">
@@ -30,8 +30,8 @@
                 <h1 class="end__title">Game Over</h1>
                 <h2 class="end__title title--2">Play Again?</h2>
                 <div class="end__continue">
-                    <button class="end__buttom buttom--no">No</button>
-                    <button class="end__buttom buttom--yes">Yes</button>
+                    <button class="end__buttom buttom--no" onclick="close_window()">No</button>
+                    <button class="end__buttom buttom--yes" onclick="restart()">Yes</button>
                 </div>
             </section>
         </div>
@@ -39,7 +39,7 @@
             <h3 class="header__title">Tentativas restantes: <span id="tentativas"></span></h3>
             <div class="header__right">
                 <div class="right__icon">
-                    <ion-icon class="right__icon__reload" name="reload-outline"></ion-icon>
+                    <ion-icon class="right__icon__reload" name="reload-outline" onclick="restart()"></ion-icon>
                 </div>
                 <div class="right__icon" onclick="menutoggle()">
                     <ion-icon class="right__icon__menu active" name="menu-outline"></ion-icon>
