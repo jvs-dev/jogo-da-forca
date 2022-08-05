@@ -350,6 +350,8 @@
     font-size: 1.5em;
     color: white;
     transition: 0.5s;
+    text-decoration: none;
+    align-items: center;
 }
 
 .menu__button:hover {
@@ -375,4 +377,33 @@
 .menu__p {
     text-align: center;
     color: white;
+}
+
+@media screen and (max-width: 829px) {
+    .teclado {
+        margin: 0px 0vw;
+    }
+}
+@media screen and (max-width: 580px) {
+    .forca__img,.game__right {
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 459px) {
+    .teclado__tecla {
+        margin: 8px;
+    }
+}
+@media screen and (max-width: 431px) {
+    .game__right {
+        height: 30vh;
+    }
+    .forca__img {
+        display: none;
+    }
+}
+@media screen and (max-width: 319px) {
+    .teclado__tecla {
+        margin: 3px;
+    }
 }
