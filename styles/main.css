@@ -296,15 +296,15 @@
 .end__title.title--2 {
     color: white;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 4vw;
     margin: 10px 0px;
 }
 
 .end__buttom {
     cursor: pointer;
-    font-size: 1.3em;
+    font-size: 3vw;
     font-weight: 500;
-    padding: 5px 40px;
+    padding: 5px 30px;
     transition: 0.2s;
 }
 
@@ -415,5 +415,8 @@
     }
     body {
         padding: 0px;
+    }
+    .end__buttom {
+        padding: 2px 15px;
     }
 }
