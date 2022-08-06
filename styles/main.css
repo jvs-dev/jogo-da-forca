@@ -58,6 +58,7 @@
 .forca__img {
     margin: 0px;
     height: 50vh;
+    margin-right: 15px;
 }
 
 .game__right {
@@ -132,19 +133,20 @@
 .answer__letra {
     border-bottom: 1px solid;
     font-size: 0px;
-    width: 23px;
+    width: 4.2vw;
+    height: 7vw;
     text-align: center;
     margin: 0px 5px;
     transition: 0.5s;
 }
 
 .answer__letra.correct {
-    font-size: 1.7em;
+    font-size: 5vw;
 }
 
 .answer__letra.fixed {
     border-bottom: 0px solid;
-    font-size: 1.7em;
+    font-size: 5vw;
 }
 
 .teclado {
@@ -198,13 +200,14 @@
 .maxwindow__end {
     transform: translateX(-1500px);
     height: 60%;
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: radial-gradient(50% 50% at 50% 50%, rgba(83, 0, 189, 0.93) 0%, rgba(3, 0, 7, 0.93) 100%);
-    border: 1px solid #000000;
+    border: 1px solid rgb(82, 0, 189);
+    border-radius: 7px;
     box-shadow: -22px 25px 4px rgba(0, 0, 0, 0.5);
     transition: 2s;
 }
@@ -262,28 +265,30 @@
 }
 
 .end__title {
+    text-align: center;
     color: white;
     font-weight: 500;
-    font-size: 4em;
+    font-size: 7vw;
     margin: 0px;
 }
 
 .win__title {
+    text-align: center;
     color: black;
     font-weight: 500;
-    font-size: 4em;
+    font-size: 7vw;
     margin: 0px;
 }
 
 .win__title.title--2 {
-    font-size: 3em;
+    font-size: 5vw;
     font-weight: 400;
 }
 .win__button {
     background-color: greenyellow;
     padding: 4px 25px;
     cursor: pointer;
-    font-size: 1.3em;
+    font-size: 3vw;
     margin-top: 20px;
     border: 1px solid;
     border-radius: 3px;
@@ -291,7 +296,7 @@
 .end__title.title--2 {
     color: white;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 3vw;
     margin: 10px 0px;
 }
 
@@ -389,6 +394,11 @@
         height: 40vh;
     }
 }
+@media screen and (max-width: 520px) {
+    .forca__img {
+        display: none;
+    }
+}
 @media screen and (max-width: 459px) {
     .teclado__tecla {
         margin: 8px;
@@ -398,12 +408,12 @@
     .game__right {
         height: 30vh;
     }
-    .forca__img {
-        display: none;
-    }
 }
 @media screen and (max-width: 319px) {
     .teclado__tecla {
-        margin: 3px;
+        margin: 4px;
+    }
+    body {
+        padding: 0px;
     }
 }
