@@ -132,12 +132,16 @@
 
 .answer__letra {
     border-bottom: 1px solid;
-    font-size: 5vw;
+    font-size: 0px;
     width: 4.2vw;
     height: 7vw;
     text-align: center;
     margin: 0px 5px;
     transition: 0.5s;
+}
+
+.answer__letra.correct {
+    font-size: 5vw;
 }
 
 .answer__letra.fixed {
